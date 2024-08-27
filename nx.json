@@ -1,21 +1,11 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
-    "build": {
-      "dependsOn": [
-        "^build"
-      ],
-      "cache": true
-    },
-    "e2e": {
-      "cache": true
-    },
-    "lint": {
-      "cache": true
-    },
-    "test": {
-      "cache": true
-    }
+    "build": { "dependsOn": ["^build"], "cache": true },
+    "e2e": { "cache": true },
+    "lint": { "cache": true },
+    "test": { "cache": true }
   },
-  "defaultBase": "main"
+  "defaultBase": "main",
+  "nxCloudAccessToken": "NzBiZDdhZjYtMTZiNy00MzQ5LTkwZTItYTU0ZTlkMjA1OTAxfHJlYWQtd3JpdGU="
 }
