@@ -17,97 +17,71 @@
     "typescript": "^5.3.3",
     "typescript-eslint": "^7.9.0",
     "vitest": "^1.6.0",
-    "@playwright/test": "^1.44.0"
+    "@playwright/test": "^1.44.0",
+    "nx": "19.6.3"
   },
   "pathMappings": {},
   "nxJsonPlugins": [],
   "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "vitest.workspace.ts",
+        "hash": "16396322914580031330"
+      },
+      {
+        "file": ".nx/workspace-data/d/server-process.json",
+        "hash": "10578466755448759833"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "6549623600993060112"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "16551278785433223217"
+      },
+      {
+        "file": ".github/workflows/verify.yml",
+        "hash": "7822522831245325891"
+      },
+      {
+        "file": "nx.json",
+        "hash": "9212537955463700586"
+      },
+      {
+        "file": "README.md",
+        "hash": "4700395810831076463"
+      },
+      {
+        "file": "package.json",
+        "hash": "89701186090265917"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "9819753831465000102"
+      },
+      {
+        "file": "eslint.config.js",
+        "hash": "16836957567313904017"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "11086628576018310275"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "15530355292532638895"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "1409024233119639755"
+      }
+    ],
     "projectFileMap": {
-      "@tasker/dashboard-widgets": [
-        {
-          "file": "packages/dashboard-widgets/package.json",
-          "hash": "7312021753636290631",
-          "deps": [
-            "npm:@types/node",
-            "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:@heroicons/react",
-            "npm:@nivo/line@0.85.1",
-            "@tasker/database",
-            "@tasker/ui",
-            "npm:next@14.1.1"
-          ]
-        },
-        {
-          "file": "packages/dashboard-widgets/src/__snapshots__/projects-statuses.spec.tsx.snap",
-          "hash": "2315031580698147421"
-        },
-        {
-          "file": "packages/dashboard-widgets/src/index.ts",
-          "hash": "13918072088326414879"
-        },
-        {
-          "file": "packages/dashboard-widgets/src/projects-statuses.spec.tsx",
-          "hash": "6319485338181988189"
-        },
-        {
-          "file": "packages/dashboard-widgets/src/projects-statuses.tsx",
-          "hash": "15485919701555625760"
-        },
-        {
-          "file": "packages/dashboard-widgets/src/team-members.tsx",
-          "hash": "13568524278343962120"
-        },
-        {
-          "file": "packages/dashboard-widgets/src/upcoming-tasks.tsx",
-          "hash": "4390394383087813280"
-        },
-        {
-          "file": "packages/dashboard-widgets/tsconfig.json",
-          "hash": "12611762881020804421"
-        },
-        {
-          "file": "packages/dashboard-widgets/vitest.config.ts",
-          "hash": "11332436452328376925"
-        }
-      ],
-      "@tasker/database": [
-        {
-          "file": "packages/database/package.json",
-          "hash": "6946605833180192255",
-          "deps": [
-            "npm:@types/node",
-            "npm:prisma",
-            "npm:@prisma/client",
-            "npm:date-fns",
-            "npm:sqlite3"
-          ]
-        },
-        {
-          "file": "packages/database/schema.prisma",
-          "hash": "16515487715013133087"
-        },
-        {
-          "file": "packages/database/scripts/_seed.data.ts",
-          "hash": "15979456661967363009"
-        },
-        {
-          "file": "packages/database/scripts/seed.ts",
-          "hash": "7035114379696182590"
-        },
-        {
-          "file": "packages/database/src/db.ts",
-          "hash": "1681463268323842660"
-        },
-        {
-          "file": "packages/database/src/model.ts",
-          "hash": "2628277144505557758"
-        },
-        {
-          "file": "packages/database/tsconfig.json",
-          "hash": "9996440386873318550"
-        }
-      ],
       "@tasker/web": [
         {
           "file": "apps/web/next-env.d.ts",
@@ -241,87 +215,36 @@
           "hash": "15402855537017138098"
         }
       ],
-      "@tasker/e2e-web": [
+      "@tasker/tasks-widgets": [
         {
-          "file": "e2e/web/global-setup.ts",
-          "hash": "1097941736677964258"
-        },
-        {
-          "file": "e2e/web/package.json",
-          "hash": "6507741185669876834",
+          "file": "packages/tasks-widgets/package.json",
+          "hash": "2236757971986054470",
           "deps": [
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@heroicons/react",
+            "@tasker/ui",
+            "@tasker/database",
             "npm:date-fns",
-            "npm:@playwright/test",
-            "npm:@types/node"
+            "npm:next@14.1.1"
           ]
         },
         {
-          "file": "e2e/web/playwright.config.ts",
-          "hash": "9304302741766606759"
+          "file": "packages/tasks-widgets/src/created-tasks.tsx",
+          "hash": "17386276653012869010"
         },
         {
-          "file": "e2e/web/tests/auth-login-logout.spec.ts",
-          "hash": "6875592315381374180"
+          "file": "packages/tasks-widgets/src/index.ts",
+          "hash": "13919034538647787247"
         },
         {
-          "file": "e2e/web/tests/auth-protected.spec.ts",
-          "hash": "8571777093762928065"
+          "file": "packages/tasks-widgets/src/my-tasks.tsx",
+          "hash": "3585817029136171181"
         },
         {
-          "file": "e2e/web/tests/dashboard.spec.ts",
-          "hash": "12935305048239705650"
-        },
-        {
-          "file": "e2e/web/tests/helpers/auth-helper.ts",
-          "hash": "13569709744849883807"
-        },
-        {
-          "file": "e2e/web/tests/helpers/project-helper.ts",
-          "hash": "15434347534781842240"
-        },
-        {
-          "file": "e2e/web/tests/helpers/task-helper.ts",
-          "hash": "2617419886232220352"
-        },
-        {
-          "file": "e2e/web/tests/projects-details-create-defaults.spec.ts",
-          "hash": "15179239860105509094"
-        },
-        {
-          "file": "e2e/web/tests/projects-details-create-tasks.spec.ts",
-          "hash": "14590432182899680718"
-        },
-        {
-          "file": "e2e/web/tests/projects-details-update-status.spec.ts",
-          "hash": "7368100578642464339"
-        },
-        {
-          "file": "e2e/web/tests/projects-list.spec.ts",
-          "hash": "17691683771068176482"
-        },
-        {
-          "file": "e2e/web/tests/sidebar.spec.ts",
-          "hash": "16736183955105858471"
-        },
-        {
-          "file": "e2e/web/tests/tasks-details-create-tasks.spec.ts",
-          "hash": "17217225246539047226"
-        },
-        {
-          "file": "e2e/web/tests/tasks-details-delete-tasks.spec.ts",
-          "hash": "4370481862600519462"
-        },
-        {
-          "file": "e2e/web/tests/tasks-details-editings.spec.ts",
-          "hash": "9142929212401841757"
-        },
-        {
-          "file": "e2e/web/tests/tasks-list.spec.ts",
-          "hash": "770700018243605612"
-        },
-        {
-          "file": "e2e/web/tsconfig.json",
-          "hash": "3138504050151875777"
+          "file": "packages/tasks-widgets/tsconfig.json",
+          "hash": "12611762881020804421"
         }
       ],
       "@tasker/ui": [
@@ -417,88 +340,174 @@
           "hash": "12611762881020804421"
         }
       ],
-      "@tasker/tasks-widgets": [
+      "@tasker/dashboard-widgets": [
         {
-          "file": "packages/tasks-widgets/package.json",
-          "hash": "2236757971986054470",
+          "file": "packages/dashboard-widgets/package.json",
+          "hash": "7312021753636290631",
           "deps": [
             "npm:@types/node",
             "npm:@types/react",
             "npm:@types/react-dom",
             "npm:@heroicons/react",
-            "@tasker/ui",
+            "npm:@nivo/line@0.85.1",
             "@tasker/database",
-            "npm:date-fns",
+            "@tasker/ui",
             "npm:next@14.1.1"
           ]
         },
         {
-          "file": "packages/tasks-widgets/src/created-tasks.tsx",
-          "hash": "17386276653012869010"
+          "file": "packages/dashboard-widgets/src/__snapshots__/projects-statuses.spec.tsx.snap",
+          "hash": "2315031580698147421"
         },
         {
-          "file": "packages/tasks-widgets/src/index.ts",
-          "hash": "13919034538647787247"
+          "file": "packages/dashboard-widgets/src/index.ts",
+          "hash": "13918072088326414879"
         },
         {
-          "file": "packages/tasks-widgets/src/my-tasks.tsx",
-          "hash": "3585817029136171181"
+          "file": "packages/dashboard-widgets/src/projects-statuses.spec.tsx",
+          "hash": "6319485338181988189"
         },
         {
-          "file": "packages/tasks-widgets/tsconfig.json",
+          "file": "packages/dashboard-widgets/src/projects-statuses.tsx",
+          "hash": "15485919701555625760"
+        },
+        {
+          "file": "packages/dashboard-widgets/src/team-members.tsx",
+          "hash": "13568524278343962120"
+        },
+        {
+          "file": "packages/dashboard-widgets/src/upcoming-tasks.tsx",
+          "hash": "4390394383087813280"
+        },
+        {
+          "file": "packages/dashboard-widgets/tsconfig.json",
           "hash": "12611762881020804421"
+        },
+        {
+          "file": "packages/dashboard-widgets/vitest.config.ts",
+          "hash": "11332436452328376925"
+        }
+      ],
+      "@tasker/database": [
+        {
+          "file": "packages/database/package.json",
+          "hash": "6946605833180192255",
+          "deps": [
+            "npm:@types/node",
+            "npm:prisma",
+            "npm:@prisma/client",
+            "npm:date-fns",
+            "npm:sqlite3"
+          ]
+        },
+        {
+          "file": "packages/database/schema.prisma",
+          "hash": "16515487715013133087"
+        },
+        {
+          "file": "packages/database/scripts/_seed.data.ts",
+          "hash": "15979456661967363009"
+        },
+        {
+          "file": "packages/database/scripts/seed.ts",
+          "hash": "7035114379696182590"
+        },
+        {
+          "file": "packages/database/src/db.ts",
+          "hash": "1681463268323842660"
+        },
+        {
+          "file": "packages/database/src/model.ts",
+          "hash": "2628277144505557758"
+        },
+        {
+          "file": "packages/database/tsconfig.json",
+          "hash": "9996440386873318550"
+        }
+      ],
+      "@tasker/e2e-web": [
+        {
+          "file": "e2e/web/global-setup.ts",
+          "hash": "1097941736677964258"
+        },
+        {
+          "file": "e2e/web/package.json",
+          "hash": "6507741185669876834",
+          "deps": [
+            "npm:date-fns",
+            "npm:@playwright/test",
+            "npm:@types/node"
+          ]
+        },
+        {
+          "file": "e2e/web/playwright.config.ts",
+          "hash": "9304302741766606759"
+        },
+        {
+          "file": "e2e/web/tests/auth-login-logout.spec.ts",
+          "hash": "6875592315381374180"
+        },
+        {
+          "file": "e2e/web/tests/auth-protected.spec.ts",
+          "hash": "8571777093762928065"
+        },
+        {
+          "file": "e2e/web/tests/dashboard.spec.ts",
+          "hash": "12935305048239705650"
+        },
+        {
+          "file": "e2e/web/tests/helpers/auth-helper.ts",
+          "hash": "13569709744849883807"
+        },
+        {
+          "file": "e2e/web/tests/helpers/project-helper.ts",
+          "hash": "15434347534781842240"
+        },
+        {
+          "file": "e2e/web/tests/helpers/task-helper.ts",
+          "hash": "2617419886232220352"
+        },
+        {
+          "file": "e2e/web/tests/projects-details-create-defaults.spec.ts",
+          "hash": "15179239860105509094"
+        },
+        {
+          "file": "e2e/web/tests/projects-details-create-tasks.spec.ts",
+          "hash": "14590432182899680718"
+        },
+        {
+          "file": "e2e/web/tests/projects-details-update-status.spec.ts",
+          "hash": "7368100578642464339"
+        },
+        {
+          "file": "e2e/web/tests/projects-list.spec.ts",
+          "hash": "17691683771068176482"
+        },
+        {
+          "file": "e2e/web/tests/sidebar.spec.ts",
+          "hash": "16736183955105858471"
+        },
+        {
+          "file": "e2e/web/tests/tasks-details-create-tasks.spec.ts",
+          "hash": "17217225246539047226"
+        },
+        {
+          "file": "e2e/web/tests/tasks-details-delete-tasks.spec.ts",
+          "hash": "4370481862600519462"
+        },
+        {
+          "file": "e2e/web/tests/tasks-details-editings.spec.ts",
+          "hash": "9142929212401841757"
+        },
+        {
+          "file": "e2e/web/tests/tasks-list.spec.ts",
+          "hash": "770700018243605612"
+        },
+        {
+          "file": "e2e/web/tsconfig.json",
+          "hash": "3138504050151875777"
         }
       ]
-    },
-    "nonProjectFiles": [
-      {
-        "file": ".github/workflows/verify.yml",
-        "hash": "7822522831245325891"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "570928114634998874"
-      },
-      {
-        "file": ".npmrc",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "6549623600993060112"
-      },
-      {
-        "file": ".vscode/settings.json",
-        "hash": "1409024233119639755"
-      },
-      {
-        "file": "README.md",
-        "hash": "4700395810831076463"
-      },
-      {
-        "file": "eslint.config.js",
-        "hash": "16836957567313904017"
-      },
-      {
-        "file": "package.json",
-        "hash": "17417377890954872578"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "15549210863688754592"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "9819753831465000102"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "11086628576018310275"
-      },
-      {
-        "file": "vitest.workspace.ts",
-        "hash": "16396322914580031330"
-      }
-    ]
+    }
   }
 }
