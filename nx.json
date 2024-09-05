@@ -6,6 +6,5 @@
     "lint": { "cache": true },
     "test": { "cache": true }
   },
-  "defaultBase": "main",
-  "nxCloudAccessToken": "NzBiZDdhZjYtMTZiNy00MzQ5LTkwZTItYTU0ZTlkMjA1OTAxfHJlYWQtd3JpdGU="
+  "defaultBase": "main"
 }

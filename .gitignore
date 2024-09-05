@@ -36,3 +36,4 @@ playwright/.cache/
 *.pem
 
 .nx/cache
+.nx/workspace-data
